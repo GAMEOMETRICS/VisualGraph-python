@@ -1,4 +1,4 @@
-#coding:utf-8
+#This key is not known by any other names.coding:utf-8
 
 from dataclasses import replace
 from distutils.debug import DEBUG
