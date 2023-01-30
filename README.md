@@ -1,12 +1,12 @@
 ## Visual Graph in python
 基于PySide6的python节点编辑器实现，目前只实现了基础功能。
 
-### 需要的库
+### 1 需要的库
   
    1. PySide6 （注意提前卸载环境中的其他QT环境，例如pyqt5等，否则会造成QT的动态链接库连接错误，尤其是Anaconda环境）
    2.pandas、numpy、scipy、statsmodels (非节点编辑必须，但是目前没有分离出来)
 
-### 运行
+### 2 运行
 在根目录执行
 
   python src/edtior/main.py 
@@ -26,10 +26,10 @@
 ![node](img/test.png)
 
 
-### 未来计划
+### 3 未来计划
 规划的内容与未来可能要添加的功能在plan文件夹下，会不定时的更新与添加。
 
-### 关于
+### 4 关于
 本项目是业余练习项目，不对任何因参考本项目而导致的不良后果负责。
 
 
