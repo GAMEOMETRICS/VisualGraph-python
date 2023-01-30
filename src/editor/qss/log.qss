@@ -1,0 +1,45 @@
+QWidget {
+
+    background-color:#1e1f1c;
+    border-top:1px solid #525252;
+    border-left:1px solid #525252;
+    border-right:1px solid #525252;
+}
+
+QScrollBar:vertical
+    {
+        /* border-left: 0.5px solid #999999;
+        border-top: 0.5px solid #999999;
+        border-bottom: 0.5px solid #999999; */
+
+        background-color: #272727;
+        width:10px;    
+        margin-left:1px;
+    }
+
+QScrollBar::handle:vertical
+    {
+        border: 0px solid red;
+        border-radius: 0px;
+        background-color: #20999999;
+    }
+
+QScrollBar::handle:vertical:hover
+    {
+        border: 0px solid red;
+        border-radius: 0px;
+        background-color: #20999999;
+        opacity:80;
+    }
+
+
+QScrollBar::add-line:vertical {       
+        height: 0px;
+        subcontrol-position: bottom;
+        subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+    height: 0 px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}

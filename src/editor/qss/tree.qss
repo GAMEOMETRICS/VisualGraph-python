@@ -1,0 +1,118 @@
+
+QTreeWidget{
+    background-color: #313131;
+
+    /* set the font properties*/
+    font-size:14px;
+    color: #c4c4c4;
+    font-family:Consolas;
+
+    margin:0;
+    padding:0;
+
+    border:none;
+}
+
+QTreeWidget#MenuTree {
+    min-width:260px;
+    font-size:15px;
+    padding:5px;
+    min-height:400px;
+}
+
+QTreeWidget#detailTree {
+    color:#c4c4c4;
+    font-size:14px;
+    padding:10px;
+}
+
+
+QTreeWidget::item{
+    margin-top:5px;
+}
+
+QTreeWidget::branch{
+    background-color: #313131;
+}
+QTreeWidget::branch:selected{
+    background-color: #313131;
+}
+
+QTreeView::item:selected:active{
+    background: #333d94aa;
+}
+
+QTreeView::item:selected:!active {
+    background-color: #313131;
+    color: #c4c4c4;
+}
+
+
+QTreeView::branch:has-siblings:!adjoins-item {
+    border-image: none 0;
+}
+
+QTreeView::branch:has-siblings:adjoins-item {
+    border-image: none;
+    border:none;
+    
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+    border-image: none;
+    border:none;
+}
+
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+        border-image: none;
+        image: url('./src/editor/icons/tree-close-white.png') no-repeat center center fixed;
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings  {
+        border-image: none;
+        image: url('./src/editor/icons/tree-open-white.png') no-repeat center center fixed;
+}
+
+QTreeWidget QScrollArea {
+    background-color:red;
+}
+
+QScrollBar:vertical
+    {
+        /* border-left: 0.5px solid #999999;
+        border-top: 0.5px solid #999999;
+        border-bottom: 0.5px solid #999999; */
+
+        background-color: #272727;
+        width:10px;    
+        margin-left:1px;
+    }
+
+QScrollBar::handle:vertical
+    {
+        border: 0px solid red;
+        border-radius: 0px;
+        background-color: #20999999;
+    }
+
+QScrollBar::handle:vertical:hover
+    {
+        border: 0px solid red;
+        border-radius: 0px;
+        background-color: #20999999;
+        opacity:80;
+    }
+
+
+QScrollBar::add-line:vertical {       
+        height: 0px;
+        subcontrol-position: bottom;
+        subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+    height: 0 px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}

@@ -1,0 +1,143 @@
+/* 首先是ToolBoxWidget */
+
+
+ToolBoxWidget {
+
+    background-color:#313131;
+
+}
+
+ToolBoxWidget #container {
+    background-color:#313131;
+}
+
+
+ToolBoxWidget > QScrollArea {
+
+    /* background-color:#313131;
+    background: transparent; */
+    background: transparent;
+
+}
+ToolBoxWidget > QScrollArea > QWidget > QWidget {
+    background-color:#313131;
+    
+}
+
+ToolBoxWidget QScrollBar:vertical
+    {
+        /* border-left: 0.5px solid #999999;
+        border-top: 0.5px solid #999999;
+        border-bottom: 0.5px solid #999999; */
+
+        background-color: #272727;
+        width:10px;    
+        margin-left:1px;
+    }
+
+ToolBoxWidget QScrollBar::handle:vertical
+    {
+        border: 0px solid red;
+        border-radius: 0px;
+        background-color: #20999999;
+    }
+
+ToolBoxWidget QScrollBar::handle:vertical:hover
+    {
+        border: 0px solid red;
+        border-radius: 0px;
+        background-color: #20999999;
+        opacity:80;
+    }
+
+
+ToolBoxWidget QScrollBar::add-line:vertical {       
+        height: 0px;
+        subcontrol-position: bottom;
+        subcontrol-origin: margin;
+}
+ToolBoxWidget QScrollBar::sub-line:vertical {
+    height: 0 px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+
+ToolBoxComponentWidget {
+    background-color:#313131;
+}
+
+ToolBoxComponentWidget QPushButton#ToolCompTitle {
+    border-radius : 0px;
+    background-color: #272727;
+    height:30px;
+}
+
+ToolBoxComponentWidget QPushButton#ToolCompTitle QLabel {
+
+    color:#c1c1c1;
+    font-size:14px;
+    font-weight:bold;
+
+}
+
+ToolBoxComponentWidget #toolContent {
+    color:#c1c1c1;
+    font-size:14px;
+    padding:5px;
+    background-color:#313131;
+}
+
+
+SidebarWidget {
+    background-color:#313131;
+}
+
+SidebarWidget QWidget#SideBarTitle {
+    min-height:40px;
+    background:#151515;
+}
+
+SidebarWidget QWidget#SideBarTitle QLabel {
+    color:#c1c1c1;
+    font-size:14px;
+}
+
+SidebarWidget QWidget#SideBarTitle QPushButton{
+    background-color:#151515;
+    border:none;
+    color:#c1c1c1;
+    font-size:25px;
+    border-radius:5px;
+    height:25px;
+    min-width:35px;
+}
+
+SidebarWidget QWidget#SideBarTitle QPushButton:hover{
+    background-color:#313131;
+    font-size:30px;
+}
+
+SidebarWidget QWidget#SideBarTitle QPushButton:menu-indicator {
+    image:none;
+    width:0px;
+}
+
+SidebarWidget QMenu {
+    background-color:#313131;
+}
+
+SidebarWidget QMenu:item {
+    color:#ddd;
+    min-height:25px;
+    font-size:13px;
+    padding-right:50px;
+    padding-left:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+SidebarWidget QMenu:item:selected {
+    background-color:rgba(100,100,100,150);
+}
+
+

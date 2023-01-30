@@ -1,0 +1,173 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "D:/coding/visual-graph/src/editor/main.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": true
+  },
+  {
+   "optionDest": "console",
+   "value": true
+  },
+  {
+   "optionDest": "icon_file",
+   "value": "D:/coding/visual-graph/src/editor/icons/icon.ico"
+  },
+  {
+   "optionDest": "name",
+   "value": "Visual-Graph-Editor"
+  },
+  {
+   "optionDest": "ascii",
+   "value": false
+  },
+  {
+   "optionDest": "clean_build",
+   "value": true
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "embed_manifest",
+   "value": true
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "win_private_assemblies",
+   "value": false
+  },
+  {
+   "optionDest": "win_no_prefer_redirects",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "argv_emulation",
+   "value": false
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/vg_config.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/vg_decorator.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/vg_dtypes.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/vg_edge.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/vg_edit_command.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/vg_editor.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/vg_env.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/vg_group.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/vg_node.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/vg_node_port.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/vg_scene.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/vg_view.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/vg_widgets.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/ProgramData/Anaconda3/Lib/site-packages/PySide6/plugins;Pyside6/plugins/"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "PySide6.QtCore"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "pandas"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/icons;./src/editor/icons"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/nodes;nodes/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/qss;./src/editor/qss"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/structs;structs/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/test;test/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/tools;tools/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/coding/visual-graph/src/editor/widgets;widgets/"
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": ""
+ }
+}

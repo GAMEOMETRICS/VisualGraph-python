@@ -1,0 +1,144 @@
+ QMainWindow{
+    background-color: #646464;
+    padding-top:10px;
+}
+
+
+QMenuBar {
+    background-color: #1e1f1c;
+    spacing: 20px; /* spacing between menu bar items */
+    font-size:16px;
+    color:#c4c4c4;
+    min-height:25px;
+}
+
+QMenuBar::item {
+    padding: 2px 4px;
+    background: transparent;
+    border-radius: 2px;
+}
+
+QMenuBar::item:selected { /* when selected using mouse or keyboard */
+    background: #aaa8a8a8;
+    color:#ddd;
+    border-radius: 2px;
+
+}
+
+QMenuBar::item:pressed {
+    background: #aaa8a8a8;
+    color:#ddd;
+    border-radius: 2px;
+}
+
+QMenu {
+    background-color: #151515; /* sets background of the menu */
+    font-size:16px;
+    color:#c4c4c4;
+
+    min-width:150px;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: #c4c4c4;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+
+
+QMenu::item {
+    /* sets background of menu item. set this to something non-transparent
+        if you want menu color and menu item color to be different */
+    background-color: transparent;
+}
+
+QMenu::item:selected { /* when user selects item using mouse or keyboard */
+    background-color: #888888;
+}
+
+QMenu::item:disabled { /* when user selects item using mouse or keyboard */
+    color: #888888;
+}
+QMenu::item:disabled:selected{
+    background-color: #151515;
+}
+
+QMenu::item::indicator{
+    text-align:right;
+}
+
+
+QTabWidget QWidget{
+    border:none;
+    margin:0px;
+    padding:0px;
+    color:#c4c4c4;
+    font-size:16px;
+}
+
+QTabWidget {
+    padding-top:10px;
+    margin-top:10px;
+}
+
+
+QTabWidget::pane { /* The tab widget frame */
+    border-top:7px solid qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #151515, stop: 0.4 #101010,
+                                stop: 0.5 #010101, stop: 1.0 #313131);
+
+}
+
+QTabWidget::tab-bar {
+    border-bottom:1px solid #101010;
+}
+
+QTabBar::tab {
+    background-color: #313131;
+    min-width: 15ex;
+    padding: 7px 20px;
+    border-right:0.5px solid #151515;
+    
+}
+
+QTabBar::tab:selected {
+    background-color: #151515;
+}
+
+/** 是运行路径 **/
+QTabBar::close-button{
+    image:url(./src/editor/icons/x.png);
+    background-color:transparent;
+}
+
+QTabBar::close-button::hover{
+    image:url(./src/editor/icons/x.png);
+    background-color:#888888;
+    border-radius:2px;
+}
+
+QSplitter::handle{
+    background-color: #313131;
+    width:0.5px;
+    border-left:1px solid #313131;
+    border-right:1px solid #313131;
+
+}
+
+QToolBox{
+    padding-left:0px;
+    margin-left:0px;
+}
+
+QToolBox::tab {
+    font-size:20px;
+}
+
+
+QToolBox::tab:selected { 
+    font: italic;
+}

@@ -1,0 +1,31 @@
+
+AddButton {
+    image: url('./src/editor/icons/add.png');
+    border:none;
+}
+
+AddButton:hover {
+    image: url('./src/editor/icons/add_hover.png');
+    border:none;
+}
+
+AddButton:pressed {
+    image: url('./src/editor/icons/add_pressed.png');
+    border:none;
+}
+
+
+MinusButton {
+    image: url('./src/editor/icons/minus.png');
+    border:none;
+}
+
+MinusButton:hover {
+    image: url('./src/editor/icons/minus_hover.png');
+    border:none;
+}
+
+MinusButton:pressed {
+    image: url('./src/editor/icons/minus_pressed.png');
+    border:none;
+}

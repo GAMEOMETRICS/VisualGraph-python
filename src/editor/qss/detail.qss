@@ -1,0 +1,45 @@
+QLabel {
+    color:#c4c4c4;
+    font-size:12px;
+    text-align:right;
+}
+QTreeWidget{
+
+    font-size:12px;
+    color: #c4c4c4;
+
+    margin:0;
+    padding-right:15px;;
+
+    border:none;
+}
+
+QTreeWidget::item{
+    margin-top:5px;
+    margin-bottom:5px;
+    height:25px;
+    border:none;
+}
+
+QTreeWidget::item:selected{
+    border:none;
+}
+
+QTreeWidget::branch{
+    background-color: #313131;
+    border-image:none;
+}
+QTreeWidget::branch:selected{
+    background-color: #313131;
+}
+
+QTreeView::item:selected:active{
+    background: #313131;
+    border:none;
+}
+
+QTreeView::item:selected:!active {
+    background-color: #313131;
+    color: #c4c4c4;
+    border:none;
+}
