@@ -124,3 +124,13 @@ python可视化编程框架
 - [ ] Table 操作的Nodes，创建、合并等等 :white_check_mark:
 - [ ] network 操作的Nodes
 
+### 更好的编译器
+画好网络之后，对graph进行编译执行。
+- [ ] 生成指定python代码
+- [ ] 更全功能的编译
+
+
+### 好用的自定义node界面
+给用户一个自定义的节点，类似与function的界面，有些用户可能项定义自己的function给别人用。
+
+
