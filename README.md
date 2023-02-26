@@ -1,38 +1,44 @@
-## Visual Graph in python
+## Visual Graph in python - dev branch
 基于PySide6的python节点编辑器实现，目前只实现了基础功能。
 
-### 1 需要的库
+`dev`是用来开发使用，稳定以后会推送到`main`分支。
+
+### 1. 2023年任务列表
+
+  - 重构代码结构
+    - editor: 前台显示功能, graph、node绘制以及编辑，将node的绘制与运行分开。
+    - compiler: graph的运行。
+    - node_manager: 库管理。
+    - plugin_manager
+    - types 
+
+  - editor
+    - 简化editor 
+    - 插件式变成
+    - 自定义node的UI 
+
+  - compiler
+    - 异步运行graph 
+    - graph的debug 
+    - graph转换为python代码
+    - 后台运行与进程管理
+
+  - node_manager
+    - node manager用于管理所有的节点库以及节点运行需要的环境问题
+    - node基类，虽有的节点都必须继承该类
+    - node的事件定义
   
-    1. PySide6 （注意提前卸载环境中的其他QT环境，例如pyqt5等，否则会造成QT的动态链接库连接错误，尤其是Anaconda环境）
-
-    2. pandas、numpy、scipy、statsmodels (非节点编辑必须，但是目前没有分离出来)
-
-### 2 运行
-在根目录执行
-
-    python src/edtior/main.py 
-
-这里执行路径很重要，本项目有所的import都是根据执行文件夹的相对路径，在不同路径内执行可能导致module找不到，或者资源找不到的情况。
-
-### 3 当前成果的部分截图
-
-1. Editor 截图
-![editor](img/editor.png)
-
-2. Node列表
-![node](img/nodes.png)
-
-
-3. 其他测试
-![node](img/test.png)
-
-
-### 4 未来计划
-规划的内容与未来可能要添加的功能在plan文件夹下，会不定时的更新与添加。
-
-### 5 关于
-本项目是业余练习项目，不对任何因参考本项目而导致的不良后果负责。
-
+  - type_manager
+    - 类型管理 主要是管理整个项目的类型及其对应的class
+  
+### 2. 开发进度计划
+  
+  - 2023年3月份：editor的展示、编辑与运行完全分离，即任意一个新的graph的json文件，就算本地没有库，也可以进行展示。
+    * editor重构，实习graph编辑与执行分离，graph、node显示完全基于json进行。
+    * editor_config文件，记录editor的状态，例如浏览历史、保存状态等等。
+    * 使用QDockWdiget对界面进行重构。
+    
+     
 
 
 
